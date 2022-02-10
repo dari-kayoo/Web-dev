@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "style" href = "style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Microsoft</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: black;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        a {
+            color: #262626;
+            text-decoration: none;
+        }
+
+        .menu {
+            position: absolute;
+            margin-top: 0%;
+            list-style-type: none;
+            word-spacing: 20px;
+            margin-left: 15%;
+            font-size: larger;
+            box-sizing: inherit;
+            
+        }
+        li{
+            display: inline;
+            font-weight: 600;
+        }
+        li a:hover{
+            text-decoration: underline;
+        }
+
+        .container {
+            position: absolute;
+            z-index: 1;
+        }
+        h1{
+            font-size: 55px;
+        }
+        #words{
+            font-size: 25px;
+        }
+        #thinner{
+            font-size: 15px;
+        }
+        .entrar:hover{
+            text-decoration: underline;
+        }
+        .entra{
+            background-color: blue;
+            color: white;
+        }
+        .main{
+            position: absolute;
+            z-index: 2;
+            margin-top: 6%;
+            margin-left: 55%;
+        }
+        .pres{
+            position: absolute;
+            font-size: larger;
+            font-weight: 600;
+            margin-top: 2%;
+            margin-left: 75%;
+            z-index: 3;
+        }
+        .pres:hover{
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="https://i.ibb.co/wwLhz98/logo.png" alt="Microsoft" class="logo">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Microsoft365</a></li>
+        <li><a href="#">Office</a></li>
+        <li><a href="#">Windows</a></li>
+        <li><a href="#">Поддержки</a></li>
+        <li><button type="submit" class="entrar">Купить</button></li>
+      </ul>
+    </div>
+    <div class="main">
+        <h1>Microsoft 365</h1>
+        <p id="words">Добивайтесь<br>большего в учебе, на<br>работе и в жизни</p>
+        <p id="thinner">Выберите подходящий план</p>
+        <div><button type="submit" class="entra">Для дома и семьи</button> <button type="submit" class="entra">Для бизнеса</button></div>
+        <div><button type="submit" class="entra">Для предприятий</button> <button type="submit" class="entra">Для образования</button></div>
+
+    </div>
+    <div class="pres">
+        <a href="#">Продукты Майкрасофт</a>
+    </div>
+    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero_M365_HomePage_1920x800:VP4-1399x726" width="100%" height="100%">
+</body>
+</html>
