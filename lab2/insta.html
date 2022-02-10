@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "style" href = "style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Overpass+Mono" rel="stylesheet">
     <title>Instagram</title>
     <style>
         * {
@@ -15,7 +15,7 @@
             /* font-family: 'Alegreya Sans', sans-serif; */
         }
         body {
-            background: rgb(248, 248, 248);
+            background: rgb(247, 245, 245);
             color: #1c1e21;
             direction: ltr;
             line-height: 1.34;
@@ -25,19 +25,22 @@
         }
         h2 {
             color: rgb(0, 0, 0);
-            padding: 112px 0 16px;
-            font-family: 'Proxima' italic, 
+            margin-top:10%;
+            
     
         }
 
-        .container {
-            width: 100;
-            max-width: 10000px;
-            margin: auto;
-            height: 95vh;
+        .form {
+            position:absolute;
+            width: 30%;
+            height: 40%;
+            overflow:hidden;
             font-family: 'Alegreya Sans', sans-serif;
-            border-color: black;
-            margin-left: auto;
+            border:1px solid black;
+            background-color: white;
+            padding:10px;
+            margin-left:50%;
+            margin-top:5%;
         }
         div{
             display: block;
@@ -45,29 +48,63 @@
         .ili{
             text-align: center;
         }
+        #img{
+            position:absolute;
+            margin-top:5%;
+            margin-left:20%;
+            width:60%
+        }
+        .under{
+            position: absolute;
+            margin-top:30%;
+            margin-left:50%;
+
+        }
+        .entrar{
+            background-color: rgb(30, 83, 255);
+            color: white;
+            justify-content: center;
+            width:30%;
+            margin-left:auto;
+            margin-right: auto;
+
+        }
+        .enter{
+            background-color:none;
+            color: rgb(30, 83, 255);
+            border:none;
+            width:30%;
+            margin-left:auto;
+            margin-right: auto;
+        }
 
     </style>
 </head>
 <body>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBhG-2kF0PpgPmefPUKNLcjP4tRY9dt_jd_g&usqp=CAU">
+    <div id="img">
+        <img src="https://icon-library.com/images/instagram-iphone-icon/instagram-iphone-icon-4.jpg" width="28%">
+    </div>
     <div class="form">
         <h2 class = "insta">Instagram</h2>
-            <input type="text" placeholder="Электронный адрес или номер телефона">
-            <input type="text" placeholder="Пороль">
+            <div><input type="text" placeholder="Электронный адрес или номер телефона"></div>
+            <div><input type="text" placeholder="Пороль"></div>
             <button type="submit" class="entrar">Вход</button>
             <p class="ili">или</p>
             <a href="#"><img src="">Войти через Facebook</a>
-            <a href="#">Забыли пороль?</a>
+            <div>
+                <a href="#">Забыли пороль?</a>
+            </div>
             
     </div>
 
     <div class="under">
-        <p>У вас ещё нет аккаунта?<button type="account">Зарегистрироваться</button></p>
-    </div>
-    <div>
-        Установите приложение.
-    </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIKxlv2bZRAy-e73R8sebU-JRco9KGOk_S0aUeo_DxLCDNrsbgxe0l35EqN0-rAKnCw&usqp=CAU" width="25%">
+        <div>
+            <p>У вас ещё нет аккаунта?<button type="account" class="enter">Зарегистрироваться</button></p>
+        </div>
+        <div>
+            Установите приложение.
+        </div>
+        <a href = "googleplay.com/instagram"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIKxlv2bZRAy-e73R8sebU-JRco9KGOk_S0aUeo_DxLCDNrsbgxe0l35EqN0-rAKnCw&usqp=CAU" width="45%"></a>
     </div>
 </div>
 </body>
