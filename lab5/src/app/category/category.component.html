@@ -1,0 +1,126 @@
+
+<div *ngFor="let category of categories" id ="siu111">
+
+    <button [class.selected]="category === selectedHero " type="button" (click)="onSelect(category)">
+      {{category.name}}
+    </button> 
+    
+  
+  </div>
+
+
+  
+  <div *ngIf="selectedHero ">
+
+    <div *ngIf = "selectedHero.name ==='Phone'">
+    <h2>{{selectedHero.name | uppercase}} category products</h2>
+  
+    <div *ngFor="let product of products"  id ="siu">
+        
+        <div  *ngIf="!show">
+          <button (click)="siu()">Remove</button>
+         <h3>
+        <a [title]="product.name + ' details'">
+          {{ product.name }}
+        </a>
+      </h3>
+  
+      <p *ngIf="product.description">Description: {{ product.description }}</p>
+      <p *ngIf="product.description">Rating: {{ product.rating }}</p>
+      <img src = "{{product.image}}">
+  
+      
+      
+      <button type="button" id = "(click)=share()">
+        Share
+      </button>
+
+      <app-like></app-like>
+        </div>
+    </div>
+      
+      
+    </div>
+
+
+    <div *ngIf = "selectedHero.name ==='usb'">
+      <h2>{{selectedHero.name | uppercase}} category products</h2>
+    
+      <div *ngFor="let usb of usbs"  id ="siu">
+     
+        <h3>
+          <a [title]="usb.name + ' details'">
+            {{ usb.name }}
+          </a>
+        </h3>
+    
+        <p *ngIf="usb.description">Description: {{ usb.description }}</p>
+        <p *ngIf="usb.description">Rating: {{ usb.rating }}</p>
+        <img src = "{{usb.image}}">
+    
+        
+        
+        <button type="button" id = "(click)=share()">
+          Share
+        </button>
+        <app-like></app-like>
+      </div>
+        
+        
+      </div>
+
+      <div *ngIf = "selectedHero.name ==='beauty'">
+        <h2>{{selectedHero.name | uppercase}} category products</h2>
+      
+        <div *ngFor="let beauty of  beauties"  id ="siu">
+       
+          <h3>
+            <a [title]="beauty.name + ' details'">
+              {{ beauty.name }}
+            </a>
+          </h3>
+      
+          <p *ngIf="beauty.description">Description: {{ beauty.description }}</p>
+          <p *ngIf="beauty.description">Rating: {{ beauty.rating }}</p>
+          <img src = "{{beauty.image}}">
+      
+          
+          
+          <button type="button" id = "(click)=share()">
+            Share
+          </button>
+          <app-like></app-like>
+        </div>
+          
+          
+        </div>
+
+
+        <div *ngIf = "selectedHero.name ==='Sport'">
+          <h2>{{selectedHero.name | uppercase}} category products</h2>
+        
+          <div *ngFor="let sport of sports"  id ="siu">
+         
+            <h3>
+              <a [title]="sport.name + ' details'">
+                {{ sport.name }}
+              </a>
+            </h3>
+        
+            <p *ngIf="sport.description">Description: {{ sport.description }}</p>
+            <p *ngIf="sport.description">Rating: {{ sport.rating }}</p>
+            <img src = "{{sport.image}}">
+        
+            
+            
+            <button type="button" id = "(click)=share()">
+              Share
+            </button>
+            <app-like></app-like>
+          </div>
+            
+            
+          </div>
+  
+  
+  </div>  
