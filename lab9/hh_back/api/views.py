@@ -1,7 +1,6 @@
 from django.http import JsonResponse
 from django.shortcuts import render
 from api.models import Company, Vacancy
-import operator
 
 # Create your views here.
 #a
@@ -33,6 +32,5 @@ def vacancies_detail(request, vacancy_id):
 
 #f
 def vacancy_top_ten():
-    auths = Vacancy.objects.order_by('-salary')[:10]
-    ordered = sorted(auths, key=operator.attrgetter('name'))
+    ordered = Vacancy.objects.order_by('-salary')[:10]
     return JsonResponse(ordered.to_json())
